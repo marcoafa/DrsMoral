@@ -1,0 +1,16 @@
+/*FONT*/
+/*PRIMARY COLORS*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*CSS CONTENT BLOCKS*/
+body {
+  font-family: monospace, sans-serif;
+  font-size: 18px;
+  background-color: darkred;
+}
+
+/*# sourceMappingURL=css/contenido.css.map */
