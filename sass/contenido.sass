@@ -1,22 +1,55 @@
 
 /*FONT*/
-$font-stack:   monospace, sans-serif
+$font-stack:   'PT Sans Narrow', sans-serif
 $font-size: 18px
 
 /*PRIMARY COLORS*/
-$fs-color: darkred
-$sc-color: gray
-$th-color: blue
+$fs-color: #444
+$sc-color: red
+$th-color: #313D52
+
+/*PRIMARY HOVERS*/
+$menu-hover: #555
+$text-color: #fff
+
+/*NAVIGATION
+$navigation-height:40px;
 
 * 
   margin: 0
   padding: 0
+  -webkit-box-sizing: border-box
+  -moz-box-sizing: border-box
   box-sizing: border-box
 
-
-/*CSS CONTENT BLOCKS*/
 
 body
   font-family: $font-stack
   font-size: $font-size
+
+/*NAV MENU*/
+.menu_general
+  top: 0
+  position: fixed
+  height: $navigation-height
+  width: 100%
   background-color: $fs-color
+  color: $text-color
+  
+  li 
+    display: inline
+    float: left
+
+  a 
+    display: inline-block
+    width: 100px
+    text-decoration: none
+    text-align: center
+    padding: 10px 0
+    color: $text-color
+  
+  li:hover 
+    background-color: $menu-hover
+
+  
+  
