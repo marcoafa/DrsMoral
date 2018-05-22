@@ -4,7 +4,6 @@ $(window).scroll(function(){
     if($(window).scrollTop() > 50){
             $("#header_page").css("position","fixed")
             $("#header_page").css("width","100%")
-            $("#header_page").css("width","100%")
             $("#header_page").css("z-index","1000")
             $("#header_page").css("top","0")
            
@@ -32,7 +31,7 @@ $('a[href*="#"]')
         // Only prevent default if animation is actually gonna happen
         event.preventDefault();
         $('html, body').animate({
-          scrollTop: target.offset().top
+          scrollTop: target.offset().top + (-40)
         }, 1000, function() {
           // Callback after animation
           // Must change focus!
