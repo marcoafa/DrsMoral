@@ -12,7 +12,7 @@ $(window).scroll(function(){
 })
 
 // Select all links with hashes
-$('a[href*="#"]')
+$('.menu_general>ul>li>a[href*="#"]')
   // Remove links that don't actually link to anything
   .not('[href="#"]')
   .not('[href="#0"]')

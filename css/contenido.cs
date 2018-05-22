@@ -149,6 +149,10 @@ body {
   text-align: center;
   width: 100%;
 }
+#contact iframe {
+  width: 100%;
+  height: 30%;
+}
 
 #contact_block {
   display: flex;
@@ -157,55 +161,14 @@ body {
 }
 
 #contact_form {
-  width: 100%;
+  width: 50%;
 }
 #contact_form input {
   width: 100%;
   border: 1px solid #3e425b;
-  background: #f7f7f7;
+  background: #aeaeae;
   padding: 10px;
   margin: 0 0 5px;
-  border-width: 2px;
-  border-radius: 5px;
-}
-#contact_form textarea {
-  width: 100%;
-  border: 1px solid #3e425b;
-  background-color: #f7f7f7;
-  border-width: 2px;
-  border-radius: 5px;
-}
-#contact_form div {
-  margin: 0 auto;
-  width: 70%;
-  padding: 10px;
-}
-#contact_form button {
-  padding: 11px 20px;
-  cursor: pointer;
-  margin-right: 7px;
-  border: 0;
-  border-radius: 5px;
-  background-color: #3e425b;
-  color: #fff;
 }
 
-/*UBICACION*/
-#location {
-  width: calc(100vw - 30%);
-  height: calc(100vh - 40px);
-  margin: 0 auto;
-}
-#location h3 {
-  text-align: center;
-  padding: 20px;
-}
-#location iframe {
-  width: 100%;
-  height: 50%;
-}
-#location article {
-  width: 100%;
-}
-
-/*# sourceMappingURL=css/contenido.css.map */
+/*# sourceMappingURL=css/contenido.cs.map */

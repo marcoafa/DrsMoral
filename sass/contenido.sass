@@ -1,16 +1,25 @@
 
 /*FONT*/
-$font-stack:   'PT Sans Narrow', sans-serif
+$font-stack:   'Oswald', sans-serif
 $font-size: 18px
 
+/*BODY*/
+$content-w:30%
+$body-color:white
+
 /*PRIMARY COLORS*/
-$fs-color: #444
-$sc-color: red
-$th-color: #313D52
+$fs-color: #3e425b
+$sc-color: #aeaeae
+$th-color: #7ed3ea
+$fo-color: #FF6938
+$fi-color: #f7f7f7
+
+$text-color: #fff
 
 /*PRIMARY HOVERS*/
-$menu-hover: #555
-$text-color: #fff
+$menu-hover:#ddd
+$menu-text: #3e425b
+
 
 /*NAVIGATION
 $navigation-height:40px
@@ -26,11 +35,11 @@ $navigation-height:40px
 body
   font-family: $font-stack
   font-size: $font-size
-  background: #e4ebe9 url(../images/fancy_deboss.png) repeat top left
+  background: $body-color
   font-weight: 400
     -webkit-font-smoothing: antialiased
     overflow-x: hidden
-    min-width: 320px
+    max-width: calc(100vh - #{$navigation-height})
 
 .container
   margin-top:40px
@@ -43,7 +52,7 @@ body
   width: 100%
   background-color: $fs-color
   color: $text-color
-  
+
   li 
     display: inline
     float: left
@@ -55,31 +64,141 @@ body
     text-align: center
     padding: 10px 0
     color: $text-color
-  
+  a:hover
+     color:$menu-text
   li:hover 
     background-color: $menu-hover
+
+  ul
+    width: calc(100vw - #{$content-w})
+    margin: 0 auto
 
   
 /*HOME*/
 #home
-  width: 100%
+  width: calc(100vw - #{$content-w})
   height: calc(100vh - #{$navigation-height})
-  border:2px solid red
+  margin: 0 auto
 	
 /*SERVICE*/
 #service
-  width: 100%
+  display: flex
+  width: calc(100vw - #{$content-w})
   height: calc(100vh - #{$navigation-height})
-  border:2px solid red
+  align-items: center
+  justify-content: space-around
+  margin: 0 auto
+  
+
+.service_menu
+  width: 30%
+  height: 80%
+  ul
+     list-style: none
+  li
+    width: 100%
+  a
+    display: block
+    text-align: center
+    text-decoration: none
+    text-transform: uppercase
+    color: $menu-text
+    border-right: 2px solid #{$menu-hover}
+    background-color: white
+    padding: 30px
+    &:hover, &.active 
+      background:$menu-hover
+     
     
+    
+
+.service_info
+  width: 60%
+  height: 80%
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3)
+  background-color: #f7f7f7
+  h2
+    text-align: center
+    margin: 20px 30px
+    font-size: 1.5em
+    color:$fs-color
+  p
+    text-align: center
+    margin: 20px 30px
+    font-size: 1em
+    text-align: justify
+    color:$fs-color
+    line-height: 2em
+  img
+    display: block
+    width: 70%
+    max-height:270px
+    margin: 0 auto
 /*TEAM*/
 #team
-  width: 100%
+  width: calc(100vw - #{$content-w})
   height: calc(100vh - #{$navigation-height})
-  border:2px solid red
+  margin: 0 auto
 
 /*CONTACT*/
 #contact
-  width: 100%
+  width: calc(100vw - #{$content-w})
   height: calc(100vh - #{$navigation-height})
-  border:2px solid red
+  margin: 0 auto
+  article
+    width: 100%
+    h3
+      text-align: center
+      width: 100%
+    p
+      text-align: center
+      width: 100%
+  
+
+#contact_block
+  display: flex
+  width: 100%
+  height: 50%
+
+#contact_form
+  width: 100%
+  input
+    width: 100%
+    border: 1px solid $fs-color
+    background: $fi-color
+    padding: 10px
+    margin: 0 0 5px
+    border-width: 2px
+    border-radius: 5px
+  textarea
+    width: 100%
+    border: 1px solid $fs-color
+    background-color: $fi-color
+    border-width: 2px
+    border-radius: 5px
+  div
+    margin: 0 auto
+    width: 70%
+    padding: 10px
+  button
+    padding: 11px 20px
+    cursor: pointer
+    margin-right: 7px
+    border: 0
+    border-radius: 5px
+    background-color: $fs-color
+    color: $text-color
+
+/*UBICACION*/
+#location
+  width: calc(100vw - #{$content-w})
+  height: calc(100vh - #{$navigation-height})
+  margin: 0 auto
+  h3
+    text-align: center
+    padding: 20px
+  iframe
+    width: 100%
+    height: 50%
+  article
+    width: 100%
