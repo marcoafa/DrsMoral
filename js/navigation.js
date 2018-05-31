@@ -4,7 +4,7 @@ $(window).scroll(function(){
     if($(window).scrollTop() > 50){
             $("#header_page").css("position","fixed")
             $("#header_page").css("width","100%")
-            $("#header_page").css("z-index","1000")
+            $("#header_page").css("z-index","1001")
             $("#header_page").css("top","0")
            
     }
@@ -17,6 +17,10 @@ $('.menu_general>ul>li>a[href*="#"]')
   .not('[href="#"]')
   .not('[href="#0"]')
   .click(function(event) {
+    debugger;
+    $(".menu_general").find('.menu_top_line').removeClass('menu_top_line');
+    $(this).siblings().addClass('menu_top_line');
+    //$nav.eq( pos ).addClass( 'nav-dot-current' );
     // On-page links
     if (
       location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') 
@@ -35,6 +39,8 @@ $('.menu_general>ul>li>a[href*="#"]')
         }, 1000, function() {
           // Callback after animation
           // Must change focus!
+          //Change class css
+       
           var $target = $(target);
           $target.focus();
           if ($target.is(":focus")) { // Checking if the target was focused

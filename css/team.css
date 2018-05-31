@@ -1,0 +1,34 @@
+.team_conteiner {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 90%;
+  height: 75%;
+  border: 1px solid blue;
+  margin: 0 auto;
+}
+.team_conteiner div {
+  width: calc( 90% / 3.5 );
+  height: 100%;
+  border: 2px solid green;
+}
+.team_conteiner div article {
+  width: 100%;
+  height: 50%;
+  border: 2px solid black;
+}
+.team_conteiner div figure {
+  position: relative;
+  width: calc( 90% / 3.5 );
+  height: 50%;
+  border: 2px solid yellow;
+}
+.team_conteiner div figure img {
+  border-radius: 50%;
+  height: auto;
+  font-size: 0;
+  vertical-align: middle;
+  max-width: 100%;
+}
+
+/*# sourceMappingURL=css/team.css.map */

@@ -1,0 +1,32 @@
+@import "variables.sass"
+    
+//CONTEINER IMG SIZE
+$wc-team: 90%
+$wh-team: 75%
+.team_conteiner
+    display: flex
+    justify-content: space-around
+    align-items: center
+    width: $wc-team
+    height: $wh-team
+    border:1px solid blue
+    margin:0 auto
+    div
+        width: calc( #{$wc-team} / 3.5 )
+        height: 100%
+        border: 2px solid green
+        article
+            width: 100%
+            height: 50%
+            border: 2px solid black
+        figure
+            position: relative
+            width: calc( #{$wc-team} / 3.5 )
+            height: 50%
+            border:2px solid yellow
+            img
+                border-radius: 50%
+                height: auto
+                font-size: 0
+                vertical-align: middle
+                max-width: 100%
