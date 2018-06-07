@@ -19,13 +19,13 @@
 }
 .team_conteiner div figure {
   position: relative;
-  width: calc( 90% / 3.5 );
+  width: 100%;
   height: 50%;
   border: 2px solid yellow;
 }
 .team_conteiner div figure img {
   border-radius: 50%;
-  height: auto;
+  height: 100%;
   font-size: 0;
   vertical-align: middle;
   max-width: 100%;
